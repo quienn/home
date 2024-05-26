@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+ENABLED=""
+DISABLED=""
+
+if makoctl mode | grep -q 'do-not-disturb'; then
+	echo "$DISABLED"
+else
+	echo "$ENABLED"
+fi

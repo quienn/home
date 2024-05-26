@@ -1,0 +1,17 @@
+default-timeout=5000
+
+font=Monaspace Radon 10
+
+on-button-middle=exec makoctl menu -n "$id" wofi -p 'acción: '
+
+# Colors (Mocha)
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #313244
+
+[urgency=high]
+border-color=#fab387
+
+[mode=do-not-disturb]
+invisible=1
