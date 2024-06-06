@@ -10,7 +10,12 @@ alias grep='grep --color=auto'
 
 export EDITOR="code -w"
 
+source "${LUVER_DIR}/self/luver.bash"
+
 source "/usr/share/fzf/key-bindings.bash"
 source "/usr/share/fzf/completion.bash"
 
+source "$HOME/.config/wezterm/wezterm.sh"
+
+eval "$(zoxide init bash)"
 eval "$(starship init bash)"

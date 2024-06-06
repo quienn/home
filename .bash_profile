@@ -35,7 +35,7 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export ADB_VENDOR_KEYS="$XDG_CACHE_HOME"/adb/keys
 export HISTFILE="$XDG_STATE_HOME"/bash/history
-export ARDUINO_DIRECTORIES_DATA="$XDG_DATA_HOME"/arduino15
-export ARDUINO_DIRECTORIES_DOWNLOADS="$XDG_DATA_HOME"/arduino15/staging
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+export LUVER_DIR="$XDG_DATA_HOME"/luver
+
+[[ -f ~/.bashrc ]] && . "$HOME/.bashrc"
