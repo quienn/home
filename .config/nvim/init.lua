@@ -48,3 +48,16 @@ bootstrap {
    "echasnovski/mini.comment",
    "echasnovski/mini.move",
 }
+
+require("vscode-multi-cursor").setup()
+require("mini.move").setup()
+require("mini.surround").setup()
+require("mini.comment").setup()
+
+local function call(name)
+   return ("<cmd>lua require('vscode').call('%s')<CR>"):format(name)
+end
+
+vim.keymap.set("n", "=", call("editor.action.formatDocument"), { noremap = true })
+vim.keymap.set("n", "<leader>p", call("workbench.action.showCommands"), { noremap = true })
+vim.keymap.set("n", "<leader>b", call("workbench.action.toggleSidebarVisibility"), { noremap = true })

@@ -6,6 +6,7 @@ base-devel
 brightnessctl
 cliphist
 darkman
+dragonfly-reverb-vst3
 easyeffects
 efibootmgr
 entr
@@ -48,6 +49,7 @@ smartmontools
 sof-firmware
 spotify-launcher
 starship
+surge-xt
 thermald
 tup
 udiskie
